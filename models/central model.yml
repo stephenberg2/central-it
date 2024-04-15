@@ -23,3 +23,11 @@ relationships:
     to:
       dimension: Date Dim
       level: Day
+  - unique_name: FACTINTERNETSALES_productkey_to_Product Dim_Product Name
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dim
+      level: Product Name
