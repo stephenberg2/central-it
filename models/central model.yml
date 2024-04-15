@@ -1,0 +1,6 @@
+unique_name: central model
+object_type: model
+label: central model
+metrics:
+  - unique_name: Sales Amount
+relationships: []
