@@ -1,0 +1,29 @@
+unique_name: Date Dim
+object_type: dimension
+label: Date Dim
+hierarchies:
+  - unique_name: Date Hierarchy
+    label: Date Hierarchy
+    levels:
+      - unique_name: Year
+        time_unit: year
+      - unique_name: Day
+        time_unit: day
+level_attributes:
+  - unique_name: Year
+    label: Year
+    contains_unique_names: false
+    dataset: DATECUSTOM
+    is_unique_key: false
+    key_columns:
+      - year
+    name_column: year_name
+  - unique_name: Day
+    label: Day
+    contains_unique_names: false
+    dataset: DATECUSTOM
+    is_unique_key: true
+    key_columns:
+      - datekey
+    name_column: date_name
+type: time

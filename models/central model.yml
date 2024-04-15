@@ -3,4 +3,22 @@ object_type: model
 label: central model
 metrics:
   - unique_name: Sales Amount
-relationships: []
+relationships:
+  - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - orderdatekey
+    role_play: Order {0}
+    to:
+      dimension: Date Dim
+      level: Day
+  - unique_name: FACTINTERNETSALES_shipdatekey_to_Date Dim_Day
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - shipdatekey
+    role_play: Ship {0}
+    to:
+      dimension: Date Dim
+      level: Day
