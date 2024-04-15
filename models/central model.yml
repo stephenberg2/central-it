@@ -3,6 +3,7 @@ object_type: model
 label: central model
 metrics:
   - unique_name: Sales Amount
+  - unique_name: Avg Unit Price
 relationships:
   - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
     from:

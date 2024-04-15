@@ -1,0 +1,6 @@
+unique_name: Avg Unit Price
+object_type: metric
+label: Avg Unit Price
+calculation_method: average
+column: unitprice
+dataset: FACTINTERNETSALES
