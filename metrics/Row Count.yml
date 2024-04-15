@@ -1,0 +1,6 @@
+unique_name: Row Count
+object_type: metric
+label: Row Count
+calculation_method: count non-null
+column: salesorderlinenumber
+dataset: FACTINTERNETSALES
