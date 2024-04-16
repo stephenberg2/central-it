@@ -1,0 +1,6 @@
+unique_name: Tax Amount
+object_type: metric
+label: Tax Amount
+calculation_method: sum
+column: taxamt
+dataset: FACTINTERNETSALES
