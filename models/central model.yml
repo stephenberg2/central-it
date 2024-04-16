@@ -5,6 +5,7 @@ metrics:
   - unique_name: Sales Amount
   - unique_name: Avg Unit Price
   - unique_name: Order Quantity
+  - unique_name: Row Count
 relationships:
   - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
     from:
