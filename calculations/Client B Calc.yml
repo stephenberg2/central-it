@@ -1,0 +1,6 @@
+unique_name: Client B Calc
+object_type: metric_calc
+label: Client B Calc
+description: client b addition calculation
+expression: 10+10
+is_hidden: false

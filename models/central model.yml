@@ -6,6 +6,7 @@ metrics:
   - unique_name: Avg Unit Price
   - unique_name: Order Quantity
   - unique_name: Tax Amount
+  - unique_name: Client B Calc
 relationships:
   - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
     from:
