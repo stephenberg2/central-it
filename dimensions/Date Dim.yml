@@ -2,11 +2,24 @@ unique_name: Date Dim
 object_type: dimension
 label: Date Dim
 hierarchies:
-  - unique_name: Date Hierarchy
-    label: Date Hierarchy
+  - unique_name: Date Month Hierarchy
+    label: Date Month Hierarchy
+    folder: Date Attributes
     levels:
       - unique_name: Year
         time_unit: year
+      - unique_name: Month
+        time_unit: month
+      - unique_name: Day
+        time_unit: day
+  - unique_name: Date Week Hierarchy
+    label: Date Week Hierarchy
+    folder: Date Attributes
+    levels:
+      - unique_name: Year
+        time_unit: year
+      - unique_name: Week
+        time_unit: week
       - unique_name: Day
         time_unit: day
 level_attributes:
@@ -18,6 +31,7 @@ level_attributes:
     key_columns:
       - year
     name_column: year_name
+    sort_column: empty_value
   - unique_name: Day
     label: Day
     contains_unique_names: false
@@ -26,4 +40,21 @@ level_attributes:
     key_columns:
       - datekey
     name_column: date_name
+    sort_column: empty_value
+  - unique_name: Month
+    label: Month
+    contains_unique_names: false
+    dataset: DATECUSTOM
+    is_unique_key: false
+    key_columns:
+      - month
+    name_column: month_name
+  - unique_name: Week
+    label: Week
+    contains_unique_names: false
+    dataset: DATECUSTOM
+    is_unique_key: false
+    key_columns:
+      - week
+    name_column: week_name
 type: time
