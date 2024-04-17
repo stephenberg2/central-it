@@ -34,3 +34,13 @@ relationships:
     to:
       dimension: Product Dim
       level: Product Name
+  - unique_name: >-
+      FACTINTERNETSALES_customerkey_to_Client A Customer Dim_client a customer
+      dim Level
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - customerkey
+    to:
+      dimension: Client A Customer Dim
+      level: client a customer dim Level
