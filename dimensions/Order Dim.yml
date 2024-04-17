@@ -1,0 +1,29 @@
+unique_name: Order Dim
+object_type: dimension
+label: Order Dim
+hierarchies:
+  - unique_name: Order Hierarchy
+    label: Order Hierarchy
+    folder: Order Attributes
+    levels:
+      - unique_name: Currency
+      - unique_name: Order
+level_attributes:
+  - unique_name: Currency
+    label: Currency
+    contains_unique_names: false
+    dataset: dimorder
+    is_unique_key: false
+    key_columns:
+      - currencykey
+    name_column: currency_name
+  - unique_name: Order
+    label: Order
+    contains_unique_names: false
+    dataset: dimorder
+    is_unique_key: true
+    key_columns:
+      - salesordernumber
+      - currencykey
+    name_column: salesordernumber
+type: standard
