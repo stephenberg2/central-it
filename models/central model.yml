@@ -1,6 +1,7 @@
 unique_name: central model
 object_type: model
 label: central model
+dimensions: []
 metrics:
   - unique_name: Sales Amount
   - unique_name: Avg Unit Price
@@ -34,3 +35,13 @@ relationships:
     to:
       dimension: Product Dim
       level: Product Name
+  - unique_name: FACTINTERNETSALES_currencykey_to_Order Dim_Order
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - salesordernumber
+        - currencykey
+    to:
+      dimension: Order Dim
+      level: Order
+
