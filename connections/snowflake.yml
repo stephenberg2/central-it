@@ -2,7 +2,5 @@ unique_name: snowflake
 object_type: connection
 label: snowflake
 as_connection: snowflake
---database: SE_DEMO_LIBRARY
-database: CRD_DEMO_CLIENT_A
---schema: AS_ADVENTURE
-schema: CORE
+database: SE_DEMO_LIBRARY
+schema: AS_ADVENTURE
