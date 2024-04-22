@@ -1,0 +1,5 @@
+unique_name: Client A Calc
+object_type: metric_calc
+label: Client A Calc
+expression: 1+1
+is_hidden: false
