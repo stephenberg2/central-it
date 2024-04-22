@@ -16,7 +16,7 @@ level_attributes:
     dataset: dimproduct
     is_unique_key: true
     key_columns:
-      - productkey_change
+      - productkey
     name_column: englishproductname
     sort_column: empty_value
   - unique_name: Product Category
