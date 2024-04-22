@@ -2,7 +2,7 @@ unique_name: dimproduct
 object_type: dataset
 label: dimproduct
 columns:
-  - name: productkey_change
+  - name: productkey
     data_type: decimal(38,0)
   - name: englishproductname
     data_type: string
