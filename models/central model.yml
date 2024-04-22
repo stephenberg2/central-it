@@ -7,6 +7,7 @@ metrics:
   - unique_name: Avg Unit Price
   - unique_name: Order Quantity
   - unique_name: Tax Amount
+  - unique_name: Client A Calc
 relationships:
   - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
     from:
@@ -43,3 +44,14 @@ relationships:
     to:
       dimension: Order Dim
       level: Order
+
+  - unique_name: >-
+      FACTINTERNETSALES_customerkey_to_Client A Customer Dim_client a customer
+      dim Level
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - customerkey
+    to:
+      dimension: Client A Customer Dim
+      level: client a customer dim Level
