@@ -7,21 +7,15 @@ hierarchies:
     folder: Date Attributes
     levels:
       - unique_name: Year
-        time_unit: year
       - unique_name: Month
-        time_unit: month
       - unique_name: Day
-        time_unit: day
   - unique_name: Date Week Hierarchy
     label: Date Week Hierarchy
     folder: Date Attributes
     levels:
       - unique_name: Year
-        time_unit: year
       - unique_name: Week
-        time_unit: week
       - unique_name: Day
-        time_unit: day
 level_attributes:
   - unique_name: Year
     label: Year
@@ -31,7 +25,7 @@ level_attributes:
     key_columns:
       - year
     name_column: year_name
-    sort_column: empty_value
+    time_unit: year
   - unique_name: Day
     label: Day
     contains_unique_names: false
@@ -40,7 +34,7 @@ level_attributes:
     key_columns:
       - datekey
     name_column: date_name
-    sort_column: empty_value
+    time_unit: day
   - unique_name: Month
     label: Month
     contains_unique_names: false
@@ -49,6 +43,7 @@ level_attributes:
     key_columns:
       - month
     name_column: month_name
+    time_unit: month
   - unique_name: Week
     label: Week
     contains_unique_names: false
@@ -57,4 +52,5 @@ level_attributes:
     key_columns:
       - week
     name_column: week_name
+    time_unit: week
 type: time
