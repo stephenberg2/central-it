@@ -201,4 +201,4 @@ columns:
   - name: rpt_year_lykey
     data_type: datetime
 connection_id: snowflake
-table: datecustom
+table: DATECUSTOM

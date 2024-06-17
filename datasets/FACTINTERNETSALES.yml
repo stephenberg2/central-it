@@ -31,4 +31,4 @@ columns:
   - name: currencykey
     data_type: decimal(38,0)
 connection_id: snowflake
-table: factinternetsales
+table: FACTINTERNETSALES

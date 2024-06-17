@@ -17,4 +17,4 @@ columns:
   - name: productsubcategoryname
     data_type: string
 connection_id: snowflake
-table: dimproduct
+table: DIMPRODUCT
