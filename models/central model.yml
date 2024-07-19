@@ -7,6 +7,15 @@ metrics:
   - unique_name: Avg Unit Price
   - unique_name: Order Quantity
   - unique_name: Tax Amount
+perspectives:
+  - unique_name: Perspective Example
+    dimensions:
+      - name: Product Dim
+        hierarchies:
+          - name: Product Hierarchy
+    metrics:
+      - Tax Amount
+      - Avg Unit Price
 relationships:
   - unique_name: FACTINTERNETSALES_orderdatekey_to_Date Dim_Day
     from:
@@ -43,3 +52,11 @@ relationships:
     to:
       dimension: Order Dim
       level: Order
+  - unique_name: FACTINTERNETSALES_customerkey_to_Customer Dimension_Customer Name
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - customerkey
+    to:
+      dimension: Customer Dimension
+      level: Customer Name
