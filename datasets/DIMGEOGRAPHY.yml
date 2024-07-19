@@ -1,0 +1,16 @@
+unique_name: DIMGEOGRAPHY
+object_type: dataset
+label: DIMGEOGRAPHY
+columns:
+  - name: geographykey
+    data_type: decimal(38,0)
+  - name: city
+    data_type: string
+  - name: stateprovincename
+    data_type: string
+  - name: englishcountryregionname
+    data_type: string
+  - name: postalcode
+    data_type: string
+connection_id: con_SE_DEMO_LIBRARY_AS_ADVENTURE
+table: DIMGEOGRAPHY

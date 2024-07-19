@@ -1,0 +1,6 @@
+unique_name: con_SE_DEMO_LIBRARY_SB_TABLES
+object_type: connection
+label: con_SE_DEMO_LIBRARY_SB_TABLES
+as_connection: atscale snowflake
+database: SE_DEMO_LIBRARY
+schema: SB_TABLES

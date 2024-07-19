@@ -18,5 +18,5 @@ columns:
     data_type: string
   - name: ordernumberlinekey
     data_type: string
-connection_id: snowflake
+connection_id: con_SE_DEMO_LIBRARY_AS_ADVENTURE
 table: DIMORDER

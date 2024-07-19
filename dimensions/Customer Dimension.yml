@@ -1,0 +1,32 @@
+unique_name: Customer Dimension
+object_type: dimension
+label: Customer Dimension
+hierarchies:
+  - unique_name: Customer Hierarchy
+    label: Customer Hierarchy
+    filter_empty: 'yes'
+    folder: Customer Attributes
+    levels:
+      - unique_name: Customer Name
+level_attributes:
+  - unique_name: Customer Name
+    label: Customer Name
+    contains_unique_names: false
+    dataset: DIMCUSTOMER
+    is_unique_key: true
+    key_columns:
+      - customerkey
+    name_column: fullname
+relationships:
+  - unique_name: DIMCUSTOMER_geographykey_to_Geography Dimension_geokey
+    from:
+      dataset: DIMCUSTOMER
+      hierarchy: Customer Hierarchy
+      join_columns:
+        - geographykey
+      level: Customer Name
+    to:
+      dimension: Geography Dimension
+      level: geokey
+    type: embedded
+type: standard

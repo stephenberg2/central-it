@@ -1,0 +1,10 @@
+unique_name: GEO_SECURITY_DIM_SB_row_security
+object_type: row_security
+label: GEO_SECURITY_DIM_SB_row_security
+dataset: GEO_SECURITY_DIM_SB
+filter_key_column: COUNTRY
+id_type: user
+ids_column: USER
+scope: fact
+secure_totals: false
+use_filter_key: false

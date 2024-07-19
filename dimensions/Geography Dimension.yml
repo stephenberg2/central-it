@@ -1,0 +1,60 @@
+unique_name: Geography Dimension
+object_type: dimension
+label: Geography Dimension
+hierarchies:
+  - unique_name: Geography Hierarchy
+    label: Geography Hierarchy
+    filter_empty: 'yes'
+    folder: Customer Attributes
+    levels:
+      - unique_name: Country
+      - unique_name: State
+      - unique_name: City
+      - unique_name: geokey
+level_attributes:
+  - unique_name: Country
+    label: Country
+    contains_unique_names: false
+    dataset: DIMGEOGRAPHY
+    is_unique_key: false
+    key_columns:
+      - englishcountryregionname
+    name_column: englishcountryregionname
+    sort_column: englishcountryregionname
+  - unique_name: State
+    label: State
+    contains_unique_names: false
+    dataset: DIMGEOGRAPHY
+    is_unique_key: false
+    key_columns:
+      - stateprovincename
+    name_column: stateprovincename
+  - unique_name: City
+    label: City
+    contains_unique_names: false
+    dataset: DIMGEOGRAPHY
+    is_unique_key: false
+    key_columns:
+      - city
+    name_column: city
+  - unique_name: geokey
+    label: geokey
+    contains_unique_names: false
+    dataset: DIMGEOGRAPHY
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - geographykey
+    name_column: geographykey
+relationships:
+  - unique_name: DIMGEOGRAPHY_englishcountryregionname_to_GEO_SECURITY_DIM_SB_row_security
+    from:
+      dataset: DIMGEOGRAPHY
+      hierarchy: Geography Hierarchy
+      join_columns:
+        - englishcountryregionname
+      level: Country
+    to:
+      row_security: GEO_SECURITY_DIM_SB_row_security
+    type: embedded
+type: standard

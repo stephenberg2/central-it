@@ -1,0 +1,12 @@
+unique_name: GEO_SECURITY_DIM_SB
+object_type: dataset
+label: GEO_SECURITY_DIM_SB
+columns:
+  - name: COUNTRY
+    data_type: string
+  - name: USER
+    data_type: string
+  - name: AZURE_GROUP
+    data_type: string
+connection_id: con_SE_DEMO_LIBRARY_SB_TABLES
+table: GEO_SECURITY_DIM_SB
